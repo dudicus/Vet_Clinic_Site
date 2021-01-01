@@ -1,0 +1,289 @@
+html {
+	box-sizing: border-box;
+}
+*,
+*:before,
+*:after {
+	box-sizing: inherit;
+}
+
+img {
+	max-width: 100%;
+	height: auto;
+}
+
+body {
+	margin: 0;
+	padding: 0;
+	font-family: Century Gothic, CenturyGothic, AppleGothic, sans-serif;
+	background-image: url(../images/prism.png);
+}
+
+.wrapper {
+	margin: 0 auto;
+	width: 860px;
+	background-color: #b1d2db;
+	border-radius: 10px;
+}
+
+main {
+	padding: 25px;
+	padding-top: 70px;
+}
+
+header {
+	display: flex;
+	background-color: #b1dbc6;
+	padding: 0 0 0 15px;
+	border: solid 2px #1c4a47;
+	border-radius: 10px;
+	width: 860px;
+	position: fixed;
+	z-index: 9;
+}
+
+header a {
+	text-decoration: none;
+	display: block;
+	text-align: center;
+	line-height: 70px;
+	color: #1c4a47;
+}
+
+header h2 {
+	margin: 0 10px 0 0;
+	font-size: 40px;
+}
+
+nav {
+	width: 100%;
+	margin-left: 30px;
+}
+
+ul {
+	margin: 0;
+	padding: 0;
+	display: flex;
+	list-style: none;
+	justify-content: space-between;
+	align-items: center;
+}
+
+li {
+	flex: 1;
+	border: solid 2px #1c4a47;
+}
+
+nav li:last-child {
+	border-radius: 0 8px 8px 0;
+}
+
+nav li:first-child {
+	border-radius: 8px 0 0 8px;
+}
+
+.double-line-book {
+	line-height: 35px;
+}
+
+nav a:hover,
+nav a:focus,
+nav a:active {
+	background-color: rgba(255, 255, 255, 0.35);
+	border-radius: 10px;
+}
+
+h1 {
+	display:block;
+	text-align: center;
+}
+
+.header-img {
+	display: block;
+	margin: 0 auto;
+	border-radius: 50%;
+}
+
+.clinic-info {
+	display: flex;
+	padding: 50px 0;
+}
+
+.location,
+.hours {
+	width: 50%;
+	text-align: center;
+}
+
+.location {
+	border-right: solid 1px #b3b3b3;
+}
+
+.location img {
+	border-radius: 10px;
+}
+
+.hours {
+	border-left: solid 1px #b3b3b3;
+}
+
+table {
+	display: block;
+	width: 100%;
+	margin-left: 50%;
+	transform: translateX(-18%);
+}
+
+td, th {
+	text-align: left;
+	padding: 10px;
+}
+
+.cycle-slideshow {
+	margin-left: 75px;
+}
+
+.clinic-images {
+	position: relative;
+}
+
+.clinic-images img {
+	border-radius: 10px;
+}
+
+#prev,
+#next {
+	position: absolute;
+	top: 50%;
+	transform: translateY(-50%);
+	z-index: 101;
+	opacity: 0.5;
+}
+
+#prev {
+	left: 12%;
+}
+
+#next {
+	right: 12%;
+}
+
+#pause {
+	margin-left: 75px;
+}
+
+footer {
+	border-top: 2px solid #000;
+	padding: 25px;
+	display: flex;
+}
+
+footer .p1 {
+	text-align: left;
+	width: 50%;
+}
+
+footer .p2 {
+	width: 50%;
+	text-align: right;
+}
+
+.xavier-img {
+	float: right;
+}
+
+.kyle-img,
+.quinn-img {
+	clear: right;
+	float: right;
+}
+
+.xavier-img,
+.quinn-img,
+.kyle-img {
+	padding: 15px;
+	border-radius: 10%;
+}
+
+.explain {
+	margin-top: 10px;
+}
+
+.appointment,
+.contact {
+	width: 480px;
+	margin: 30px auto;
+	background-color: #b1dbc6;
+	padding: 20px 30px;
+	border: 2px solid #1c4a47;
+	border-radius: 10px; 
+}
+
+input:not([type=radio]),
+select,
+textarea {
+  margin-bottom: 30px;
+  font-size: 14px;
+  display: inline-block;
+  width: 100%;
+  background-color: #e8eeef;
+  padding: 15px;
+  border: none;
+  border-radius: 5px;
+}
+
+input:focus,
+select:focus,
+textarea:focus {
+  outline-color: #9e0404;
+  outline-width: 2px;
+}
+
+input[type=submit]{
+	display:block;
+	width: 50%;
+	background-color: #1c4a47;
+	color: #b1dbc6;
+	font-size: 15px;
+	padding: 15px;
+	border-radius: 5px;
+	border: none;
+	margin-bottom: 10px;
+  }
+
+.modal-submit,
+.modal-contact {
+	display: none; /* Hidden by default */
+	position: fixed; /* Stay in place */
+	z-index: 1; /* Sit on top */
+	left: 0;
+	top: 0;
+	width: 100%; /* Full width */
+	height: 100%; /* Full height */
+	background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+  }
+  
+.modal-submit-content,
+.modal-contact-content {
+	background-color: #b1dbc6;
+	margin: 25% auto;
+	padding: 20px;
+	border: 1px solid #888;
+	border-radius: 10px;
+	width: 420px;
+  }
+  
+  /* The Close Button */
+.close {
+	color: #aaa;
+	float: right;
+	font-size: 28px;
+	font-weight: bold;
+  }
+  
+.close:hover,
+.close:focus {
+	color: black;
+	text-decoration: none;
+	cursor: pointer;
+  }
