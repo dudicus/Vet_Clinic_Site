@@ -1,0 +1,111 @@
+<!doctype html>
+<html lang="zxx">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<meta http-equiv="X-UA-Compatible" content="ie=edge" />
+		<link rel="stylesheet" href="styles/style.css" />
+		<title>Greenwood - Book Appointment</title>
+	</head>
+	<body>
+		<div class="wrapper">
+        <header>
+          <h2><a href="index.html">Greenwood</a></h2>
+          <img src="images/leaf-icon-sd.png" alt="leaf icon" />
+          <nav>
+            <ul>
+              <li><a href="index.html">Home</a></li>
+              <li><a href="about.html">About Us</a></li>
+              <li><a href="book-appointment.html" class="double-line-book">Book <br>Appointment</a></li>
+              <li><a href="contact.html">Contact</a></li>
+            </ul>
+          </nav>
+        </header>
+			<div class="book-appointment">
+				<main>
+					<h1>Book<br>Appointment</h1>
+					<img
+						src="images/agenda-on-table-sd.jpg"
+						alt="Retriever getting a bath" class="header-img"
+                    />
+          <section class="appointment">
+              <h2>Appointment Form</h2>
+                  <form method="POST" id="appointment-form" class="appointment-form">
+
+                    <label for="name">Name </label>
+                    <input type="text" id="name" name="name" required>
+                    <br>
+                        
+                    <label for="pet-name">Name of Pet </label>
+                    <input type="text" id="pet-name" name="pet-name" required>
+                    <br>
+                        
+                    <label for="phone-number">Phone Number </label>
+                    <input type="tel" id="phone-number" name="phone-number" required>
+                    <br>
+
+                    <label>Type of Animal </label>
+
+                    <select name="animal-type">
+                      <option value="dog">Dog</option>
+                      <option value="cat">Cat</option>
+                      <option value="small-mammal">Small Mammal</option>
+                      <option value="bird">Bird</option>
+                    </select>
+                    <br>
+                        
+                    <label>Reason for Appontment </label>
+                    <br>
+                        
+                    <input type="radio" id="checkup" value="checkup" name="reason" class="button" checked>
+                    <label for="checkup">Check up</label>
+                    <br>
+
+                    <input type="radio" id="vaccine" value="vaccine" name="reason" class="button">
+                    <label for="vaccine">Vaccination</label>
+                    <br>
+                        
+                    <input type="radio" id="grooming" value="grooming" name="reason" class="button">
+                    <label for="grooming">Grooming</label>
+                    <br>
+                        
+                    <input type="radio" id="other" value="other" name="reason" class="button">
+                    <label for="other">Other</label>
+                    <br>
+
+                    <p class="explain">If other, please explain</p>
+
+                    <label for="explain">Reason </label>
+                        
+                    <textarea name="explain" id="explain" cols="30" rows="2"></textarea>
+                    <br>
+
+                    <label for="appointment-date">Appointment Date</label>
+
+                    <input type="date" id="appointment-date" name="appointment-date" required>
+
+                    <label for="appointment-time">Appointment Time</label>
+
+                    <input type="time" id="appointment-time" name="appointment-time" required>
+                        
+                  <input id="book" type="submit" value="Book">
+                </form>
+                <div id="submit-modal" class="modal-submit">
+
+                  <div class="modal-submit-content">
+                      <span class="close">&times;</span>
+                      <p>Your appointment has been booked!</p>
+                      <p id="modal-content"></p>
+                      </div> 
+              </div>
+          </section>
+        </main>
+			</div>
+			<footer>
+          <p class="p1">&copy;2019 Made by Nik Schwarz</p>
+          <p class="p2">(555)555-5555<br>fakeEmail@fakeEmail.com</p>
+      </footer>
+        </div>
+        <script src="scripts/bookScript.js"></script>
+    </body>
+</html>
